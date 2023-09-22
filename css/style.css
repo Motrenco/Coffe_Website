@@ -13,11 +13,21 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background: #4133326f;
+    background: #41333240;
     height: 100vh;
-    z-index: -1;
+    
 }
 
 #hero-logo{
     width: 256px;
+}
+
+#arrow-down{
+    position: absolute;
+    bottom: 64px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    width: 64px;
 }
