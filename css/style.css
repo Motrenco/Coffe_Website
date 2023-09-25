@@ -62,3 +62,9 @@ header a:hover{
 #white-text{
     z-index: 1;
 }
+
+/******************************Intro Section****************/
+
+#intro-section{
+    background: #eae7de;
+}
