@@ -68,3 +68,18 @@ header a:hover{
 #intro-section{
     background: #eae7de;
 }
+/******************************About Section****************/
+#about-bg-1{
+    background-image: url(../../V2/img/great-place.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: right;
+    min-height: 480px;
+}
+#about-bg-2{
+    background-image: url(../../V2/img/fresh-beans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: right;
+    min-height: 640px;
+}
