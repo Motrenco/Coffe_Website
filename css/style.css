@@ -83,3 +83,32 @@ header a:hover{
     background-position: right;
     min-height: 640px;
 }
+
+/******************************About Section****************/
+
+#menu-section{
+    background: #645e5e40;
+    background-size:cover;
+}
+
+/******************************Contact Section****************/
+#contact-info-bg-1{
+    background:linear-gradient(to right, #36313782, #36313782), url(../img/contact-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+#contact-info-bg-2{
+    background-color: #00000082;
+}
+/******************************Map Section****************/
+
+/******************************Footer Section****************/
+
+footer{
+    background-color: #00000082;
+}
+
+footer a img{
+    width: 32px;
+}
