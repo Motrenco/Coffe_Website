@@ -11,6 +11,36 @@
 
 <body>
 
+    <div id="mobile-menu">
+        <a id="close-btn" href="#">
+            <img class="img-fluid" src="img/close-btn.png" alt="close-btn">
+        </a>
+        <div class="container">
+            <div class="row vh-100 align-items-center">
+                <div class="col-12 text-center">
+                    <nav>
+                        <div>
+                            <a class="mobile-menu-items text-decoration-none text-uppercase h3 mb"
+                                href="#intro-section">home</a>
+                        </div>
+                        <div class="my-3">
+                            <a class="mobile-menu-items text-decoration-none text-uppercase h3"
+                                href="#menu-section">products</a>
+                        </div>
+                        <div class="mb-3">
+                            <a class="mobile-menu-items text-decoration-none text-uppercase h3"
+                                href="#contact-info-section">contact</a>
+                        </div>
+                        <div>
+                            <a class="mobile-menu-items text-decoration-none text-uppercase h3" href="#map-section">how
+                                to find us</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="p-3">
         <div class="container-fluid">
             <div class="row">
@@ -19,12 +49,18 @@
                     <img id="header-logo" src="img/header-logo.png" alt="header-logo">
                 </div>
 
-                <div class="col-8 text-end">
-                    <a class="text-decoration-none text-uppercase" href="#">home</a>
-                    <a class="text-decoration-none text-uppercase" href="#">products</a>
-                    <a class="text-decoration-none text-uppercase" href="#">contact</a>
-                    <a class="text-decoration-none text-uppercase" href="#">how to find us</a>
+                <div class=" d-none d-md-block col-8 text-end">
+                    <a class="text-decoration-none text-uppercase" href="#intro-section">home</a>
+                    <a class="text-decoration-none text-uppercase" href="#menu-section">products</a>
+                    <a class="text-decoration-none text-uppercase" href="#contact-info-section">contact</a>
+                    <a class="text-decoration-none text-uppercase" href="#map-section">how to find us</a>
                 </div>
+
+                <div class="col-8 d-md-none text-end">
+                    <a id="menu-btn" href="#"><img id="menu-icon" src="img/menu.png" alt="menu "></a>
+
+                </div>
+
             </div>
         </div>
     </header>
@@ -54,7 +90,7 @@
         <div class="container py-5">
 
             <div class="row justify-content-center">
-                <div class="col-6 text-center py-3">
+                <div class="col-10 col-xl-6 text-center py-3">
                     <h1 class="font-weight-bold">THE BEST COFFE SHOP</h1>
                     <p class="text-muted lead text-light ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                         do eiusmod tempor
@@ -67,17 +103,17 @@
 
             <div class="row py-5">
 
-                <div class="col-4 text-center">
+                <div class="col-sm-4 text-center">
                     <img class="img-fluid py-2" src="img/icon-1.png" alt="icon-1">
                     <p>Best Beans</p>
                 </div>
 
-                <div class="col-4 text-center">
+                <div class="col-sm-4 text-center">
                     <img class="img-fluid py-2" src="img/icon-2.png" alt="icon2">
                     <p>Qualyty ingredients</p>
                 </div>
 
-                <div class="col-4 text-center">
+                <div class="col-sm-4 text-center">
                     <img class="img-fluid py-2" src="img/icon-3.png" alt="icon3">
                     <p>Perfect blend</p>
                 </div>
@@ -89,26 +125,26 @@
     <section id="about-section">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-4 offset-1 align-self-center">
-                    <h2>Great Text</h2>
-                    <p class="text-muted lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                <div class="col-12 col-md-4 offset-md-1  p-4 p-md-1 ">
+                    <h2 class="py-3 text-center">Great Text</h2>
+                    <p class="text-muted lead text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                         do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit, sed
                         do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua.</p>
-                    <button class="btn btn-primary">Find Out More</button>
+                    <button class="btn btn-primary text-center">Find Out More</button>
                 </div>
-                <div class="col-6 offset-1" id="about-bg-1">
+                <div class=" d-none d-md-block col-md-6 offset-md-1" id="about-bg-1">
 
                 </div>
 
             </div>
             <div class="row align-items-center" id="about-bg-2">
-                <div class="col-6">
+                <div class="d-none d-md-block col-md-6">
 
                 </div>
-                <div class="col-6 text-light">
+                <div class="col-12 col-md-6 text-light p-5   ">
                     <h2>Fresh beans</h2>
                     <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                         do eiusmod tempor
@@ -121,6 +157,8 @@
             </div>
         </div>
     </section>
+
+
 
     <section id="menu-section">
 
@@ -138,19 +176,21 @@
                 </div>
 
             </div>
-            <div class="row text-center">
-                <div class="col-4 my-2">
-                    <img src="img/coffee-item-1.png" alt="coffee-item-1">
+
+            <div class="row py-3">
+
+                <div class="col-xs-6 col-md-4 text-center py-2">
+                    <img class="img-fluid" src="img/coffee-item-1.png" alt="coffee-item-1">
                     <h3>CAKE</h3>
                     <p class="lead my-4"></p>
                     orem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor
                     </p>
                     <button class="btn btn-dark px-3">3.99 $</button>
-
                 </div>
-                <div class="col-4">
-                    <img src="img/coffee-item-2.png" alt="coffee-item-2">
+
+                <div class="col-xs-6 col-md-4 text-center py-2">
+                    <img class="img-fluid" src="img/coffee-item-2.png" alt="coffee-item-2">
                     <h3>COFFE</h3>
                     <p class="lead my-3"></p>
                     orem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -158,8 +198,9 @@
                     </p>
                     <button class="btn btn-dark px-3">1.99 $</button>
                 </div>
-                <div class="col-4">
-                    <img src="img/coffee-item-3.png" alt="coffee-item-3">
+
+                <div class="col-xs-6 col-md-4 text-center py-2">
+                    <img class="img-fluid" src="img/coffee-item-3.png" alt="coffee-item-3">
                     <h3>ESPRESSO</h3>
                     <p class="lead my-3"></p>
                     orem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -167,8 +208,9 @@
                     </p>
                     <button class="btn btn-dark px-3">2.99 $</button>
                 </div>
-                <div class="col-4 my-3">
-                    <img src="img/coffee-item-4.png" alt="coffee-item-4">
+
+                <div class="col-xs-6 col-md-4 text-center py-2">
+                    <img class="img-fluid" src="img/coffee-item-4.png" alt="coffee-item-4">
                     <h3>LATTE</h3>
                     <p class="lead my-3"></p>
                     orem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -176,17 +218,17 @@
                     </p>
                     <button class="btn btn-dark px-3">3.99 $</button>
                 </div>
-                <div class="col-4 my-3">
-                    <img src="img/coffee-item-5.png" alt="coffee-item-5">
+                <div class="col-xs-6 col-md-4 text-center py-2">
+                    <img class="img-fluid" src="img/coffee-item-5.png" alt="coffee-item-5">
                     <h2>MACARONS</h2>
                     <p class="lead my-3"></p>
                     orem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor
                     </p>
-                    <button class="btn btn-dark px-3">3.99 $</button>
+                    <button class="btn btn-dark px-3 py-2">3.99 $</button>
                 </div>
-                <div class="col-4 my-3">
-                    <img src="img/coffee-item-6.png" alt="coffee-item-6">
+                <div class="col-xs-6 col-md-4 text-center">
+                    <img class="img-fluid" src="img/coffee-item-6.png" alt="coffee-item-6">
                     <h2>MACCHIATO</h2>
                     <p class="lead my-3"></p>
                     orem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -202,7 +244,7 @@
     <SECtion id="contact-info-section">
         <div class="container-fluid text-light">
             <div class="row " id="contact-info-bg-1">
-                <div class="col-5 offset-1 p-5">
+                <div class="col-md-5 offset-md-1 p-5">
                     <h2>YOU ARE WELCOME</h2>
                     <P>COME ON IN</P>
                     <br>
@@ -211,7 +253,7 @@
                     <h4>Weekends</h4>
                     <p>12PM-02AM</p>
                 </div>
-                <div class="col-6 p-5 " id="contact-info-bg-2">
+                <div class="col-md-6 p-5 " id="contact-info-bg-2">
                     <h2>Contact</h2>
                     <br>
                     <h4>Phone</h4>
@@ -228,15 +270,15 @@
     </SECtion>
 
     <section id="map-section"></section>
-    
+
 
     <footer>
         <div class="container-fluid text-light py-3">
-            <div class="row align-items-center" >
-                <div class="col-5 offset-1">
+            <div class="row align-items-center">
+                <div class="col-md-5 offset-md-1">
                     Coffe Shop |@ 2023 All Rights Reserved
                 </div>
-                <div class="col-5 text-end">
+                <div class="col-md-5 text-end" id="social-icons">
                     <a href="#"><img src="img/facebook-icon.png" alt="facebook-icon"></a>
                     <a href="#"><img src="img/instagram-icon.png" alt="instagram-icon"></a>
                     <a href="#"><img src="img/twitter-icon.png" alt="twitter-icon"></a>
@@ -245,11 +287,40 @@
             </div>
         </div>
     </footer>
-    
+
 
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        window.addEventListener("load", function () {
+            let menuBtn = document.getElementById("menu-btn");
+            let mobileMenu = document.getElementById("mobile-menu");
+            let closeBtn = document.getElementById("close-btn");
+
+
+            menuBtn.addEventListener("click", function () {
+                mobileMenu.style.display = "block"
+            })
+
+            closeBtn.addEventListener("click", function () {
+                mobileMenu.style.display = "none"
+            })
+
+            let mobileMenuItems = document.getElementsByClassName("mobile-menu-items")
+                for (let i = 0; i < mobileMenuItems.length; i++) {
+            mobileMenuItems[i].addEventListener("click", function () {
+                mobileMenu.style.display = "none"
+            })
+
+        }
+            })
+
+    </script>
+
+
 </body>
 
 </html>

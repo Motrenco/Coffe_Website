@@ -22,6 +22,10 @@ header a:hover{
     color: white;
 }
 
+#menu-icon{
+    width: 32px;
+}
+
 
 
 /******************************Hero Section****************/
@@ -80,11 +84,28 @@ header a:hover{
     background-image: url(../../V2/img/fresh-beans.jpg);
     background-repeat: no-repeat;
     background-size: cover;  
-    background-position: right;
+    background-position: left;
     min-height: 640px;
+    position: relative;
+}
+@media(max-width:768px){
+    #about-bg-2::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: #00000040;
+        
+       
+    }
 }
 
-/******************************About Section****************/
+#about-section button{
+    margin-left: 30%;
+} 
+/******************************Menu Section****************/
 
 #menu-section{
     background: #645e5e40;
@@ -112,3 +133,39 @@ footer{
 footer a img{
     width: 32px;
 }
+@media(max-width:768px){
+    footer{
+        text-align: center;
+    }
+    #social-icons{
+        text-align: center !important;
+    }
+}
+
+/******************************Mobile menu****************/
+#mobile-menu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000000e8;
+    z-index: 2;
+
+    display: none;
+}
+#mobile-menu a {
+    color: white;
+}
+#mobile-menu a:hover {
+    color: rgb(210, 200, 200);
+}
+
+#close-btn{
+    position: absolute;
+    right: 29px ;
+    top: 12px;
+    width: 36px;
+}
+
+
