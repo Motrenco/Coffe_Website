@@ -19,7 +19,7 @@ header a {
     margin-left: 24px;
 }
 header a:hover{
-    color: white;
+    color: #f0e0e082;
 }
 
 #menu-icon{
@@ -140,7 +140,7 @@ header a:hover{
 /******************************Footer Section****************/
 
 footer{
-    background-color: #00000082;
+    background-color: #080605;
 }
 
 footer a img{
