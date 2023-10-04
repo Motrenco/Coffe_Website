@@ -68,6 +68,7 @@ header a:hover{
     margin: auto;
     display: block;
     width: 64px;
+    color: white;
 }
 #white-text{
     z-index: 1;
@@ -136,6 +137,10 @@ header a:hover{
     background-color: #00000082;
 }
 /******************************Map Section****************/
+
+#map{
+    height: 480px;
+}
 
 /******************************Footer Section****************/
 
